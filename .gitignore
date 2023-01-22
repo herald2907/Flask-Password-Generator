@@ -2,7 +2,7 @@
 python-flask-backend/__pycache__/
 python-flask-backend/*.py[cod]
 python-flask-backend/*$py.class
-
+python-flask-backend/flaskenv/
 # C extensions
 python-flask-backend/*.so
 
