@@ -17,14 +17,24 @@ code {
 }
 
 
-input[type="text"]:focus~.input-text,
-input[type="text"]:not(:placeholder-shown)~.input-text {
+.input-txt-bg input[type="text"]:focus~.input-text,
+.input-txt-bg input[type="text"]:not(:placeholder-shown)~.input-text {
   @apply text-sky-400 bg-white transform -translate-y-5 -translate-x-3 scale-75;
 }
 
 .input-txt-bg input[type="text"]:focus,
 .input-txt-bg input[type="text"]:not(:placeholder-shown) {
   @apply border-sky-400 bg-white;
+}
+
+.input-txt-bg-dark input[type="text"]:focus~.input-text,
+.input-txt-bg-dark input[type="text"]:not(:placeholder-shown)~.input-text {
+  @apply text-sky-400 bg-gray-800 transform -translate-y-5 -translate-x-3 scale-75;
+}
+
+.input-txt-bg-dark input[type="text"]:focus,
+.input-txt-bg-dark input[type="text"]:not(:placeholder-shown) {
+  @apply border-sky-400 bg-gray-800;
 }
 
 
@@ -83,11 +93,19 @@ input[type="text"]:not(:placeholder-shown)~.input-text {
   -webkit-appearance: none;
   width: 100%;
   height: 7px;
-  background: #F3F4F6;
+
   border-radius: 5px;
   outline: none;
   border: none;
   z-index: 2222;
+}
+
+.light-range {
+  background-color: #F3F4F6;
+}
+
+.dark-range {
+  background-color: #9CA3AF;
 }
 
 .range input::-webkit-slider-thumb {

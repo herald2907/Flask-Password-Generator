@@ -18,7 +18,7 @@ const PasswordScoreBar = ({ password }) => {
    }, [password, setPasswordScore])
 
    const barColors = [
-      'bg-gray-200',
+      'bg-gray-200 dark:bg-slate-600',
       'bg-red-400',
       'bg-yellow-400',
       'bg-green-500',
